@@ -1,11 +1,21 @@
 helga-{{ cookiecutter.plugin_name }}
-===========
+==============
 
-general description of plugin
+{{ cookiecutter.plugin_description }}
+
+Installation::
+
+    pip install helga-{{cookiecutter.plugin_name }}
+
+And add to settings!
+
+Usage::
+
+    !{{ cookiecutter.plugin_name}} help
 
 License
 -------
 
 Copyright (c) {% now 'local', '%Y' %} {{ cookiecutter.author_name }}
 
-GPLv3 Licensed
+See LICENSE for details

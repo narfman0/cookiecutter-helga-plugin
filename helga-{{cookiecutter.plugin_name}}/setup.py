@@ -1,28 +1,30 @@
 from setuptools import setup, find_packages
+from helga_{{ cookiecutter.plugin_package }} import __version__ as version
 
-version = '0.1.0'
 
-setup(name="helga-{{ cookiecutter.plugin_name }}",
-      version=version,
-      description=('{{ cookiecutter.plugin_help }}'),
-      classifiers=[
-          'Development Status :: 1 - Planning',
-          'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-          'Operating System :: OS Independent',
-          'Programming Language :: Python',
-          'Topic :: Software Development :: Libraries :: Python Modules',
-      ],
-      keywords='irc bot {{ cookiecutter.plugin_name }}',
-      author='{{ cookiecutter.author_name }}',
-      author_email='{{ cookiecutter.author_email }}',
-      license='LICENSE',
-      packages=find_packages(),
-      include_package_data=True,
-      py_modules=['helga_{{ cookiecutter.plugin_name }}'],
-      zip_safe=True,
-      entry_points = dict(
-          helga_plugins = [
-              '{{ cookiecutter.plugin_name}} = helga_{{ cookiecutter.plugin_name }}:{{ cookiecutter.plugin_name }}',
-          ],
-      ),
+setup(
+    name="helga-{{ cookiecutter.plugin_name }}",
+    version=version,
+    description=('{{ cookiecutter.plugin_description }}'),
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
+    keywords='irc bot {{ cookiecutter.plugin_name }}',
+    author='{{ cookiecutter.author_name }}',
+    author_email='{{ cookiecutter.author_email }}',
+    license='LICENSE',
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=True,
+    install_requires=[],
+    test_suite='tests/test_{{ cookiecutter.plugin_package }}',
+    entry_points=dict(
+        helga_plugins=[
+            '{{ cookiecutter.plugin_name}} = helga_{{ cookiecutter.plugin_package }}:{{ cookiecutter.plugin_package }}',
+        ],
+    ),
 )
