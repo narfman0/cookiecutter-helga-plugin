@@ -9,13 +9,37 @@ helga-{{ cookiecutter.plugin_name }}
 
 {{ cookiecutter.plugin_description }}
 
-Installation::
+Installation
+------------
+
+Install via pip::
 
     pip install helga-{{ cookiecutter.plugin_name }}
 
 And add to settings!
 
-Usage::
+Development
+-----------
+
+Install all the testing requirements::
+
+    pip install -r requirements_test.txt
+
+Run tox to ensure everything works::
+
+    make test
+
+You may also invoke `tox` directly if you wish.
+
+Release
+-------
+
+To publish your plugin to pypi, sdist and wheels are (registered,) created and uploaded with::
+
+    make release
+
+Usage
+-----
 
     !{{ cookiecutter.plugin_name }} help
 
