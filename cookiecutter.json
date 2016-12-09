@@ -1,7 +1,8 @@
 {
   "plugin_name": "plugin-name",
   "plugin_package": "{{ cookiecutter.plugin_name|replace('-', '_') }}",
-  "plugin_description": "Brief description",
-  "author_name": "My Name",
-  "author_email": "My Email"
+  "plugin_description": "brief description",
+  "github_username": "username",
+  "author_name": "name",
+  "author_email": "email"
 }

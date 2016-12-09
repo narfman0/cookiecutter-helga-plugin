@@ -7,11 +7,13 @@ setup(
     version=version,
     description=('{{ cookiecutter.plugin_description }}'),
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 4 - Beta',
+        'Topic :: Communications :: Chat :: Internet Relay Chat',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Communications :: Chat :: Internet Relay Chat',
     ],
     keywords='irc bot {{ cookiecutter.plugin_name }}',
     author='{{ cookiecutter.author_name }}',
@@ -20,7 +22,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=True,
-    install_requires=[],
+    install_requires=['helga', ],
     test_suite='tests/test_{{ cookiecutter.plugin_package }}',
     entry_points=dict(
         helga_plugins=[
