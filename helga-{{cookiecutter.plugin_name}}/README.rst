@@ -18,6 +18,11 @@ Install via pip::
 
 And add to settings!
 
+Usage
+-----
+
+    !{{ cookiecutter.plugin_name }} help
+
 Development
 -----------
 
@@ -37,11 +42,6 @@ Release
 To publish your plugin to pypi, sdist and wheels are (registered,) created and uploaded with::
 
     make release
-
-Usage
------
-
-    !{{ cookiecutter.plugin_name }} help
 
 License
 -------
