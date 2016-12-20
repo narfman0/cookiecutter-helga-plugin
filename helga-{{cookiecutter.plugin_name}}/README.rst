@@ -1,11 +1,11 @@
 helga-{{ cookiecutter.plugin_name }}
 ==============
 
-.. image:: https://badge.fury.io/py/{{ cookiecutter.plugin_name }}.png
-    :target: https://badge.fury.io/py/{{ cookiecutter.plugin_name }}
+.. image:: https://badge.fury.io/py/helga-{{ cookiecutter.plugin_name }}.png
+    :target: https://badge.fury.io/py/helga-{{ cookiecutter.plugin_name }}
 
-.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.plugin_name }}.png?branch=master
-    :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.plugin_name }}
+.. image:: https://travis-ci.org/{{ cookiecutter.github_username }}/helga-{{ cookiecutter.plugin_name }}.png?branch=master
+    :target: https://travis-ci.org/{{ cookiecutter.github_username }}/helga-{{ cookiecutter.plugin_name }}
 
 {{ cookiecutter.plugin_description }}
 
