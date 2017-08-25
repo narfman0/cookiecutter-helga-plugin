@@ -26,7 +26,7 @@ setup(
     test_suite='tests/test_{{ cookiecutter.plugin_package }}',
     entry_points=dict(
         helga_plugins=[
-            '{{ cookiecutter.plugin_name}} = helga_{{cookiecutter.plugin_package }}.helga_{{ cookiecutter.plugin_package }}:helga_{{ cookiecutter.plugin_name }}',
+            '{{ cookiecutter.plugin_name}} = helga_{{cookiecutter.plugin_package }}.helga_{{ cookiecutter.plugin_package }}:helga_{{ cookiecutter.plugin_package }}',
         ],
     ),
 )
